@@ -5,7 +5,6 @@ import com.narxoz.rpg.hero.Hero;
 
 public class HeroCombatantAdapter implements Combatant {
     private final Hero hero;
-
     public HeroCombatantAdapter(Hero hero) {
         this.hero = hero;
     }
@@ -16,10 +15,7 @@ public class HeroCombatantAdapter implements Combatant {
     }
 
     @Override
-    public int getAttackPower() {
-        // TODO: translate hero power to combat attack
-        return hero.getPower();
-    }
+    public int getAttackPower() {return hero.getPower();}
 
     @Override
     public void takeDamage(int amount) {
